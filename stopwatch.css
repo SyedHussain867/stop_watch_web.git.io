@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .stopwatch {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .timer {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 10px solid;
+    animation: borderTransition 5s infinite alternate;
+  }
+  
+  @keyframes borderTransition {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: green;
+    }
+    50% {
+      border-color: blue;
+    }
+    75% {
+      border-color: #ff6600; /* orange */
+    }
+    100% {
+      border-color: red;
+    }
+  }
+  
+  .timer h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .controls button {
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #ff6600;
+    color: white;
+    border: 2px solid #ff6600;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #ff8533;
+    border-color: #ff8533;
+  }
+  
+  .lap-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .lap-list li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #fff;
+  }
+  
+  
